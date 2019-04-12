@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    //First line
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="Flat UI KIT"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:background="#FF4500"
+        android:paddingTop="50dp"/>
+
+    //second line
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:layout_marginVertical="5dp"
+        android:weightSum="4">
+
+        //line 2.1
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="3200dp"
+            android:background="#FFA500"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="09:30"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AM 10, 2014 "
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:paddingBottom="10dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/sun"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="25"
+                android:textSize="25dp"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New York"
+                android:textSize="20dp"
+                android:textAlignment="center"/>
+
+
+
+
+        </LinearLayout>
+
+        //line 2.2
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#87ceeb"
+                android:src="@mipmap/email"
+                android:layout_marginBottom="5dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#060607"
+                android:src="@mipmap/cloud"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    //third line
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        //line 3.1
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:background="#FF4500"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/search"
+                android:padding="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="WWW"
+                android:textSize="40dp"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:layout_marginTop="50dp"/>
+
+        </LinearLayout>
+        //line 3.2
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="#FFA500"
+            android:src="@mipmap/clock"
+            android:padding="20dp"/>
+
+    </LinearLayout>
+
+    //final line
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#87ceeb"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/musicplayer"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="NOW PLAYING"
+            android:textSize="40dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
